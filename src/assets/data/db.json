@@ -1,0 +1,47 @@
+{
+
+    "profile":{
+            "bannerimg": "./assets/img/banner.png",
+            "profileimg": "./assets/img/foto de perfil.jpg",
+            "name": "Lautaro Blanco",
+            "description": "Desarrollador Fullstack Jr.",
+            "actualjob": "./assets/img/utn.jpg",
+            "actualstudy":"./assets/img/utn.jpg"
+        },
+    "apartado": [
+            {
+                "id": "Experencia"
+            },
+            {
+                "id": "Estudios"
+            }
+        ],
+    "job":[  
+        {
+            "oficio": "Impresor fotografico",
+            "img": "./assets/img/fotoeuropa.jpg",
+            "fechai": "2018",
+            "fechaf": "2019",
+            "name": "FOTOEUROPA",
+            "description": "Impresor fotografico: edicion de fotos, colorimetria, armado de cuadros, etc."
+        }],
+    "study": [
+        {
+            "actividad": "Secundario",
+            "img": "./assets/img/cens.png",
+            "fechai": "2015",
+            "fechaf": "2018",
+            "name": "Centro Educativo Nivel Secundario nº 451",
+            "description": "Secundario completo con titulo en: Bachiller con orientación en gestion y administració en práctica laboral y administrativa."
+        },
+        {
+            "actividad": "Ing. en Sistemas",
+            "img": "./assets/img/utn logo.jpg",
+            "fechai": "2021",
+            "fechaf": "actualidad",
+            "name": "Universidad Tecnologica Nacional",
+            "description": "Cursando 1er año de ingenieria en sistemas de información, en la UTN FRBA."
+        }
+    ]
+
+}

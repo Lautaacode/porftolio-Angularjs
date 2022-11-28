@@ -1,0 +1,19 @@
+.proyect-container{ 
+    max-height: 200px;
+    max-width: 350px;
+    background-color: aqua;
+}
+.progressbar-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .progressbar-container {
+        gap: 0;
+    }
+}

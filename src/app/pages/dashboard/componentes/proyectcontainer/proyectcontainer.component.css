@@ -1,0 +1,137 @@
+/*info container*/
+.content-container{
+    margin: 0 auto 1.5em;
+    padding: 1em;
+    width: 100%;
+    background-color: #ffffff;
+    border:#9f9f9f solid 1px;
+    border-radius: 1%;
+    max-width: 80em;
+}
+
+.progressbar-container {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5em;
+}
+
+@media (min-width: 768px) {
+    .progressbar-container {
+        gap: 0;
+    }
+}
+.progress-container {
+    justify-content: center;
+    align-items: center;
+    max-width: 160px;
+    max-height: 160px;
+    background: #fff;
+    border-radius: 2%;
+}
+
+.progress-container .circular-progress {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.progress-container .circular-progress svg {
+    position: relative;
+    height: 150px;
+    width: 150px;
+    transform: rotate(270deg);
+}
+
+.progress-container .circular-progress svg circle {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    fill: transparent;
+    stroke-width: 2;
+    stroke: #1919192f;
+    transform: translate(5px, 5px);
+}
+
+.progress-container .circular-progress svg circle:nth-child(2) {
+    stroke: var(--clr);
+    stroke-dasharray: 440;
+    stroke-dashoffset: calc(440 - (440 * var(--num)) / 100);
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.dot {
+    position: absolute;
+    inset: 5px;
+    z-index: 10;
+    animation: animateDot 2s linear forwards;
+}
+
+@keyframes animateDot {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(calc(3.6deg * var(--num)));
+    }
+}
+
+.dot::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: var(--clr);
+    box-shadow: 0 0 10px var(--clr),
+        0 0 30px var(--clr);
+}
+
+.number {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    opacity: 0;
+    animation: fadeIn 1s linear forwards;
+    animation-delay: 2s;
+}
+
+.number h2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2f2f2f;
+    font-weight: 700;
+    font-size: 2em;
+}
+
+.number h2 span {
+    font-weight: 300;
+    font-size: 0.5em;
+}
+
+.number i {
+    font-weight: 300;
+    font-size: 3.5em;
+    color: #2f2f2f;
+}

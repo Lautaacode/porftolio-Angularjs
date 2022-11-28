@@ -1,0 +1,90 @@
+/*general*/
+*{
+    margin: 0;
+    padding: 0;  
+}
+@media (min-width: 768px) {
+    body{
+        background-image:linear-gradient(
+            90deg,
+            rgba(0, 0, 0, 0.932),
+            rgba(255, 255, 255, 0.394),
+            rgb(0, 0, 0, 0.932)
+          ), 
+        url(/assets/img/wallp4.jpg);
+        background-repeat: no-repeat;
+        background-size:cover;
+       
+        /*background: linear-gradient(
+            45deg,
+            #131313 0%,
+            #212121 10%,
+            #292929 20%,
+            #363636 55%,
+            #292929 80%,
+            #212121 90%,
+            #131313 100%
+          );*/
+    }
+}
+
+main{
+    margin: auto;
+    padding: auto;
+    background: #efefef;
+    width: 100%;
+    min-height: 100vh;
+}
+@media (min-width: 768px) {
+    main{
+        max-width: 80em;
+    }
+}
+/* margenes y bordes*/
+.container-80em{
+    width: 100%;
+    max-width: 80em;
+}
+.border-profile{
+    border-radius: 50%;
+    border: #9f9f9f solid 2px;
+    box-shadow: 0 0 1em;
+}
+.box-shadow:hover{
+    transition-duration: .6s;    
+    box-shadow: 3px 3px .3em;
+
+}
+
+/* boton*/
+.btn-edition{
+    margin: 0;
+    padding: 0 0 .3em 0;
+    border:none; 
+}
+.btn-edition:hover{
+    text-shadow: 0px 0px 4px #000;
+    color: #ffffffcc;
+    transition:.2s;
+}
+/* texto */
+.text-title{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0 0 0 .5em;
+}
+@media (min-width: 768px) {
+    .text-title{
+        font-size: 2em;
+        margin: 1 0 1 0;
+    }
+}
+.text-description{
+    margin: 0 0 0 .7em;
+}
+@media (min-width: 768px) {
+    .text-description{
+        font-size: 110%;
+        margin: 0 0 0 1.2em;
+    }
+}

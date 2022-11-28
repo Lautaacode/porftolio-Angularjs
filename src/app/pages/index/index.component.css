@@ -1,0 +1,9 @@
+.content-container{
+    margin: 0 auto 1.5em;
+    padding: 1em;
+    width: 100%;
+    background-color: #ffffff;
+    border:#9f9f9f solid 1px;
+    border-radius: 1%;
+    max-width: 80em;
+}

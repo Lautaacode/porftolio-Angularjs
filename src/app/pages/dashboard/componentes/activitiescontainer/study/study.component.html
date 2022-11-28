@@ -1,0 +1,34 @@
+<div class="d-flex flex-row">
+    <!-- columna de filas-->
+    <div class="d-flex flex-column container-80em ">
+        <!-- filas con datos -->
+        <!-- container chico-->
+        <div *ngFor="let study of miStudy" class="d-flex flex-row border border-2 rounded p-2 m-1 box-shadow">
+            <div class="d-flex flex-column info-container">
+                <div class="d-flex">{{study.oficio}}</div>
+                <div class="d-flex">
+                    <img [src]="study.img" id="img-info" class="border-profile img-info" alt="" />
+                </div>
+                <div class="d-flex flex-column">{{study.fechai}} - {{study.fechaf}}</div>
+            </div>
+            <div class="container-fluid p-0">
+                <div class="d-flex flex-column info-text-container">
+                    <p class="text-description">
+                        {{study.name}}
+                    </p>
+                    <p class="text-description">
+                        {{study.description}}
+                    </p>
+                </div>
+            </div>
+            <div class="d-flex flex-column ">
+                <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-pencil fs-6 text-center "></i>
+                </button>
+                <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    <i class="fa-solid fa-trash-can fs-6 text-center "></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

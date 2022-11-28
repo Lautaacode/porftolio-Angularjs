@@ -1,0 +1,28 @@
+/*info container*/
+.content-container{
+    margin: auto;
+    padding: 1em;
+    width: 100%;
+    background-color: #ffffff;
+    border:#9f9f9f solid 1px;
+    border-radius: 1%;
+    max-width: 80em;
+}
+/*contenedor trabajo/ estudio */
+.info-container{
+    justify-content:space-between;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    max-width: 150px;
+    max-height: 175px;
+}
+#img-info{
+    width: 100%;
+    object-fit: cover;
+}
+.img-info{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+}

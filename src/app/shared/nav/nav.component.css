@@ -1,0 +1,12 @@
+/*nav*/
+#img-logo{
+    height: 4em;
+    width: 7em;
+}
+.logo-size{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3.2em;
+    width: 6em;
+}

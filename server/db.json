@@ -1,0 +1,31 @@
+{
+    "job":[
+       
+        {
+            "activity": "Impresor fotografico",
+            "img": "./assets/img/fotoeuropa.jpg",
+            "datei": "2018",
+            "datef": "2019",
+            "name": "FOTOEUROPA",
+            "description": "Impresor fotografico: edicion de fotos, colorimetria, armado de cuadros, etc."
+        }],
+    "study": [
+        {
+            "activity": "Secundario",
+            "img": "./assets/img/cens.png",
+            "datei": "2015",
+            "datef": "2018",
+            "name": "Centro Educativo Nivel Secundario nº 451",
+            "description": "Secundario completo con titulo en: Bachiller con orientación en gestion y administració en práctica laboral y administrativa."
+        },
+        {
+            "activity": "Ing. en Sistemas",
+            "img": "./assets/img/utn logo.jpg",
+            "datei": "2021",
+            "datef": "actualidad",
+            "name": "Universidad Tecnologica Nacional",
+            "description": "Cursando 1er año de ingenieria en sistemas de información, en la UTN FRBA."
+        }
+    ]
+
+}

@@ -1,0 +1,35 @@
+<div class="container-fluid p-0">
+    <!--Banner-->
+    <div class="d-flex justify-content-end banner-container">
+      <img [src]="miPortfolio.profile.bannerimg" id="img-banner" class="border-container">
+      <div class="d-flex flex-column p-3 position-absolute">
+        <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#bannerModal">
+          <i class="fa-solid fa-pencil fs-6 text-center "></i>
+        </button>
+      </div>
+    </div>
+    <!--profile-->
+    <div class="d-flex flex-row profile-description-container">
+      <!--img-profile-->
+      <div class="d-flex flex-column justify-content-end img-profile-container">
+        <img [src]="miPortfolio.profile.profileimg" id="img-profile" class="border-profile" alt="" />
+
+      </div>
+      <!--description-->
+      <div class="container-fluid p-0">
+        <div class="d-flex flex-column name-container">
+          <p id="name" class=" text-title">{{miPortfolio.profile.name}}</p>
+          <p id="" class="text-description">{{miPortfolio.profile.description}}</p>
+        </div>
+      </div>
+      <div class="d-flex flex-column img-description-container ">
+        <img [src]="miPortfolio.profile.actualjob" id="img-study" class="img-description" alt="">
+        <img [src]="miPortfolio.profile.actualstudy" id="img-work" class="img-description" alt="">
+      </div>
+      <div class="d-flex flex-column p-3">
+        <button type="button" class="btn btn-edition" data-bs-toggle="modal" data-bs-target="#bannerModal">
+          <i class="fa-solid fa-pencil fs-6 text-center "></i>
+        </button>
+      </div>
+    </div>
+  </div>
